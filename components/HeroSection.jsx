@@ -3,17 +3,16 @@ import CustomAvatar from "./CustomAvatar";
 import DecorativeLine from "./DecorativeLine";
 
 const HeroStyles = styled.div`
-  height: 750px;
+  min-height: 750px;
   display: flex;
-  justify-content: flex-end;
-  margin: 0 auto;
 
   .container {
     margin-top: 189px;
-    width: 1331px;
+    width: 100%;
     height: 435px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     margin-left: 109px;
   }
 

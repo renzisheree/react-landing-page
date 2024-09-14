@@ -4,11 +4,12 @@ import styled from "styled-components";
 import HeroSection from "../components/HeroSection";
 import OverviewSection from "../components/OverviewSection";
 import FeaturesSection from "../components/FeaturesSection";
+import FAQSection from "../components/FAQSection";
 
 const HomeStyles = styled.div`
   margin-left: auto;
   margin-right: auto;
-  width: 1440px;
+  width: 100%;
 `;
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <HeroSection></HeroSection>
         <OverviewSection></OverviewSection>
         <FeaturesSection></FeaturesSection>
+        <FAQSection></FAQSection>
       </Layout>
     </HomeStyles>
   );
