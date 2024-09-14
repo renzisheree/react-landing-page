@@ -3,7 +3,6 @@ import DecorativeLine from "./DecorativeLine";
 import FeatureComponent from "./FeatureComponent";
 
 const FeaturesStyle = styled.div`
-  max-height: 804px;
   width: 100%;
   background-color: #f5f5f5;
 

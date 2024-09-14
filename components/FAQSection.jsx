@@ -93,6 +93,7 @@ const FAQStyle = styled.div`
 
       h1 {
         font-size: 2em;
+        text-align: center;
       }
 
       p {
