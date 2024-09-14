@@ -1,10 +1,9 @@
-/* eslint-disable react/no-unescaped-entities */
 import styled from "styled-components";
 
-const FooterStyle = styled.div`
+export const FooterStyle = styled.div`
   background-color: #1e3a8a;
   color: white;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -17,6 +16,9 @@ const FooterStyle = styled.div`
     }
     p {
       margin-top: 10px;
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
     }
   }
 
@@ -36,7 +38,9 @@ const FooterStyle = styled.div`
         color: white;
         text-decoration: none;
         margin: 0 15px;
-
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 18px;
         &:hover {
           text-decoration: underline;
         }
@@ -47,6 +51,9 @@ const FooterStyle = styled.div`
   .footer-right {
     h4 {
       margin-bottom: 15px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 18px;
     }
 
     .subscribe-container {
@@ -54,13 +61,16 @@ const FooterStyle = styled.div`
       display: flex;
 
       input {
-        padding: 10px;
-        border: none;
+        padding: 13px 148px 15px 13px;
         border-radius: 12px;
         outline: none;
         width: 250px;
-        padding-right: 60px;
-        border: px solid white;
+        text-align: left;
+        border: 1px solid white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
       }
 
       button {
@@ -96,49 +106,3 @@ const FooterStyle = styled.div`
     }
   }
 `;
-
-const Footer = () => {
-  return (
-    <FooterStyle>
-      <div className="footer-left">
-        <img src="footer-icon.svg" alt="Footer Icon" />
-        <p>
-          makes it easy to beautify the space you’re in with the help of one of
-          our indoor plants that are sure to lift the spirits and purify the
-          air.
-        </p>
-      </div>
-      <div className="footer-center">
-        <ul className="menu">
-          <li>
-            <a href="">Features</a>
-          </li>
-          <li>
-            <a href="">Pricing</a>
-          </li>
-          <li>
-            <a href="">Blog</a>
-          </li>
-          <li>
-            <a href="">FAQs</a>
-          </li>
-        </ul>
-      </div>
-      <div className="footer-right">
-        <h4>Don't want to miss anything?</h4>
-        <div className="subscribe-container">
-          <input type="email" placeholder="Your email" />
-          <button>Subscribe</button>
-        </div>
-        <div className="social-icons">
-          <img src="facebook-icon.svg" alt="Facebook" />
-          <img src="ins-icon.svg" alt="Instagram" />
-          <img src="youtube-icon.svg" alt="YouTube" />
-          <img src="x-icon.svg" alt="Twitter" />
-        </div>
-      </div>
-    </FooterStyle>
-  );
-};
-
-export default Footer;

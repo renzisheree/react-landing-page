@@ -17,6 +17,8 @@ const OverviewStyles = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
@@ -74,7 +76,6 @@ const OverviewStyles = styled.div`
     position: absolute;
     height: 567px;
     width: 392px;
-    overflow: hidden;
   }
 
   .notify-img {
@@ -89,7 +90,8 @@ const OverviewStyles = styled.div`
     padding: 5px;
     background-color: white;
     border-radius: 30px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.05) 0px 8px 32px;
   }
 
   .bob-location-img {
@@ -119,12 +121,8 @@ const OverviewSection = () => {
               className="
               map-img"
             />
-            <img src="notify-img.png" alt="" className="notify-img" />
-            <img
-              src="/bob-location-img.png"
-              alt=""
-              className="bob-location-img"
-            />
+            <img src="famely-notify.png" alt="" className="notify-img" />
+            <img src="/bob-location.png" alt="" className="bob-location-img" />
           </div>
         </div>
         <div className="overview-right">

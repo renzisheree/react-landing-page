@@ -4,6 +4,7 @@ import FeatureComponent from "./FeatureComponent";
 
 const FeaturesStyle = styled.div`
   max-height: 804px;
+  width: 100%;
   background-color: #f5f5f5;
 
   .container {
@@ -28,10 +29,11 @@ const FeaturesStyle = styled.div`
       }
       p {
         font-size: 18px;
-        font-weight: 40;
+        font-weight: 400;
         line-height: 30px;
+
         color: #424242;
-        max-width: 500px;
+        max-width: 460px;
       }
     }
     .feature-right {
@@ -49,7 +51,7 @@ const FeaturesStyle = styled.div`
 `;
 const FeaturesSection = () => {
   return (
-    <FeaturesStyle>
+    <FeaturesStyle id="feature">
       <div className="container">
         <div className="feature-left">
           <h1>

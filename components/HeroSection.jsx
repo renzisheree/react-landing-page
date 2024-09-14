@@ -4,6 +4,7 @@ import DecorativeLine from "./DecorativeLine";
 
 const HeroStyles = styled.div`
   min-height: 750px;
+  width: 100%;
   display: flex;
 
   .container {
@@ -12,8 +13,8 @@ const HeroStyles = styled.div`
     height: 435px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-left: 109px;
+    justify-content: center;
+    margin-left: 80px;
   }
 
   .hero-left {
@@ -47,7 +48,7 @@ const HeroStyles = styled.div`
     color: #42ff8a;
     border: none;
     border-radius: 12px;
-    padding: 14px 48px;
+    padding: 17px 60px;
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s;

@@ -4,6 +4,7 @@ import DecorativeLine from "./DecorativeLine";
 
 const FAQStyle = styled.div`
   display: flex;
+  width: 100%;
   padding: 100px 0;
   flex-direction: column;
   justify-content: center;
@@ -27,6 +28,12 @@ const FAQStyle = styled.div`
       flex-direction: column;
     }
   }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #424242;
+  }
   .faq-items-container {
     display: flex;
     width: 100%;
@@ -42,6 +49,9 @@ const FAQStyle = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
 
     &:hover {
       background-color: #f1f1f1;
@@ -52,6 +62,10 @@ const FAQStyle = styled.div`
     padding: 15px;
     margin-bottom: 10px;
     text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #424242;
+    line-height: 30px;
   }
 
   .arrow {
@@ -91,7 +105,7 @@ const FAQSection = () => {
   };
 
   return (
-    <FAQStyle>
+    <FAQStyle id="faq">
       <div className="container">
         <h1>
           Frequently Asked{" "}
@@ -111,7 +125,7 @@ const FAQSection = () => {
               <div className="faq-item" onClick={() => toggleAnswer(index)}>
                 {faq.question}
                 <span className={`arrow ${openIndex === index ? "open" : ""}`}>
-                  ▼
+                  ▾
                 </span>
               </div>
               {openIndex === index && (
