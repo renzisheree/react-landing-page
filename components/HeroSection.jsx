@@ -17,8 +17,8 @@ const HeroStyles = styled.div`
     margin-left: 80px;
 
     @media (max-width: 768px) {
-      margin-left: 0; /* Adjust margin for smaller screens */
-      flex-direction: column; /* Stack elements */
+      margin-left: 0;
+      flex-direction: column;
     }
   }
 
@@ -32,8 +32,8 @@ const HeroStyles = styled.div`
     width: 537px;
 
     @media (max-width: 768px) {
-      width: 100%; /* Full width on smaller screens */
-      align-items: center; /* Center align items */
+      width: 100%;
+      align-items: center;
     }
   }
 
@@ -46,9 +46,9 @@ const HeroStyles = styled.div`
     align-items: flex-start;
 
     @media (max-width: 768px) {
-      font-size: 48px; /* Adjust font size */
+      font-size: 48px;
       line-height: 60px;
-      text-align: center; /* Center align text */
+      text-align: center;
     }
   }
 
@@ -59,9 +59,9 @@ const HeroStyles = styled.div`
     color: #424242;
 
     @media (max-width: 768px) {
-      font-size: 16px; /* Adjust font size */
+      font-size: 16px;
       line-height: 24px;
-      text-align: center; /* Center align text */
+      text-align: center;
     }
   }
 
@@ -82,8 +82,8 @@ const HeroStyles = styled.div`
     }
 
     @media (max-width: 768px) {
-      padding: 12px 30px; /* Adjust padding */
-      font-size: 18px; /* Adjust font size */
+      padding: 12px 30px;
+      font-size: 18px;
     }
   }
 
@@ -93,7 +93,7 @@ const HeroStyles = styled.div`
     height: 100%;
 
     @media (max-width: 768px) {
-      display: none; /* Hide on smaller screens */
+      display: none;
     }
   }
 
@@ -113,29 +113,28 @@ const HeroStyles = styled.div`
   }
 
   .avatar-1 {
-    top: 15%;
+    top: 12%;
     left: 25%;
   }
   .avatar-2 {
-    top: 20%;
-    right: 30%;
-  }
-  .avatar-3 {
-    bottom: 30%;
+    bottom: 35%;
     left: 35%;
   }
+  .avatar-3 {
+    bottom: 10%;
+    left: 45%;
+  }
   .avatar-4 {
-    bottom: 25%;
+    bottom: 45%;
     right: 35%;
   }
   .avatar-5 {
-    top: 20%;
-    left: 40%;
+    top: 10%;
+    left: 45%;
     width: 117px;
     height: 135px;
   }
 
-  /* Location Dot Styles */
   .location-dot-container {
     position: absolute;
     display: flex;
@@ -217,7 +216,7 @@ const HeroSection = () => {
             />
             <div
               className="location-dot-container"
-              style={{ top: "30%", left: "10%" }}
+              style={{ bottom: "30%", left: "20%" }}
             >
               <div className="outer-circle">
                 <div className="middle-circle">
@@ -227,7 +226,7 @@ const HeroSection = () => {
             </div>
             <div
               className="location-dot-container"
-              style={{ bottom: "40%", right: "20%" }}
+              style={{ top: "15%", right: "20%" }}
             >
               <div className="outer-circle">
                 <div className="middle-circle">

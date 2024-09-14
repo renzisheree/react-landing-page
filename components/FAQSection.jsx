@@ -11,6 +11,7 @@ const FAQStyle = styled.div`
   align-items: center;
 
   .container {
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -41,11 +42,12 @@ const FAQStyle = styled.div`
     .faq-items-container {
       display: flex;
       width: 100%;
+      gap: 20px;
       flex-direction: column;
 
       .faq-item {
         cursor: pointer;
-        padding: 15px;
+        padding: 25px;
         background-color: #f5f5f5;
         border-radius: 8px;
         margin: 5px 0;

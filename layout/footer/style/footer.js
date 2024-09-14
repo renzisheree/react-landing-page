@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.div`
-  background-color: #1e3a8a;
+  background-color: #0f4c81;
   color: white;
   padding: 30px;
   display: flex;
@@ -10,7 +10,7 @@ export const FooterStyle = styled.div`
   padding-bottom: 100px;
   @media (max-width: 768px) {
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
     gap: 40px;
     padding-bottom: 100px;
     input {
@@ -42,6 +42,7 @@ export const FooterStyle = styled.div`
       gap: 15px;
       @media (max-width: 768px) {
         flex-direction: row;
+        gap: 20px;
       }
 
       a {
@@ -82,7 +83,7 @@ export const FooterStyle = styled.div`
         line-height: 22px;
         text-align: left;
         @media (max-width: 768px) {
-          width: 150px;
+          width: 180px;
         }
       }
 
@@ -95,8 +96,11 @@ export const FooterStyle = styled.div`
         border-radius: 12px;
         border: none;
         border: 1px solid white;
-        background-color: #34d399;
-        color: white;
+        background-color: #42ff8a;
+        color: #0f4c81;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
         cursor: pointer;
         transition: background-color 0.3s;
 
