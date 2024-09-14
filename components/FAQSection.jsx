@@ -5,7 +5,7 @@ import DecorativeLine from "./DecorativeLine";
 const FAQStyle = styled.div`
   display: flex;
   width: 100%;
-  padding: 100px 0;
+  padding: 140px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;

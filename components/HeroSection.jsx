@@ -49,7 +49,9 @@ const HeroStyles = styled.div`
     border: none;
     border-radius: 12px;
     padding: 17px 60px;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
 
@@ -67,7 +69,7 @@ const HeroStyles = styled.div`
   .world-map {
     width: 100%;
     height: 100%;
-    background-image: url("/map.svg");
+    background-image: url("/image/map.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -102,24 +104,46 @@ const HeroStyles = styled.div`
     height: 135px;
   }
 
-  .location-dot {
+  /* Location Dot Styles */
+  .location-dot-container {
     position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #42ff8a;
-    box-shadow: 0 0 0 5px rgba(66, 255, 138, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .dot-1 {
-    top: 30%;
-    left: 10%;
+  .outer-circle {
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background-color: rgba(66, 255, 138, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .dot-2 {
-    bottom: 40%;
-    right: 20%;
+
+  .middle-circle {
+    width: 21.88px;
+    border: 2px solid white;
+
+    height: 21.88px;
+    border-radius: 50%;
+    background-color: #1e3a8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inner-dot {
+    width: 8.2px;
+    height: 8.2px;
+    border-radius: 100px 0px 0px 0px;
+    opacity: 0px;
+    border-radius: 50%;
+    background-color: #42ff8a;
   }
 `;
+
 const HeroSection = () => {
   return (
     <HeroStyles>
@@ -139,32 +163,50 @@ const HeroSection = () => {
         <div className="hero-right">
           <div className="world-map">
             <CustomAvatar
-              src="/avatar1.png"
+              src="/image/avatar1.png"
               alt="Avatar 1"
               className="avatar avatar-1"
             />
             <CustomAvatar
-              src="avatar-cat.png"
+              src="/image/avatar-cat.png"
               alt="Avatar 2"
               className="avatar avatar-2"
             />
             <CustomAvatar
-              src="avatar-shower.png    "
+              src="/image/avatar-shower.png"
               alt="Avatar 3"
               className="avatar avatar-3"
             />
             <CustomAvatar
-              src="avatar-hoodie.png"
+              src="/image/avatar-hoodie.png"
               alt="Avatar 4"
               className="avatar avatar-4"
             />
             <CustomAvatar
-              src="/image-center.png"
+              src="/image/image-center.png"
               alt="Avatar 5"
               className="avatar avatar-5"
             />
-            <div className="location-dot dot-1"></div>
-            <div className="location-dot dot-2"></div>
+            <div
+              className="location-dot-container"
+              style={{ top: "30%", left: "10%" }}
+            >
+              <div className="outer-circle">
+                <div className="middle-circle">
+                  <div className="inner-dot"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="location-dot-container"
+              style={{ bottom: "40%", right: "20%" }}
+            >
+              <div className="outer-circle">
+                <div className="middle-circle">
+                  <div className="inner-dot"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

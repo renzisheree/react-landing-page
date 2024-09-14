@@ -25,7 +25,7 @@ const Header = () => {
       <div className="header-main">
         <a href="#hero">
           <div className="logo">
-            <img src="/logo.svg" alt="logo" />
+            <img src="image/logo.svg" alt="logo" />
           </div>
         </a>
         <ul className="menu">

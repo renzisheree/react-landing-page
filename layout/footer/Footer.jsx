@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <FooterStyle>
       <div className="footer-left">
-        <img src="footer-icon.svg" alt="Footer Icon" />
+        <img src="image/footer-icon.svg" alt="Footer Icon" />
         <p>
           makes it easy to beautify the space you’re in with the help of one of
           our indoor plants that are sure to lift the spirits and purify the
@@ -36,10 +36,10 @@ const Footer = () => {
           <button>Subscribe</button>
         </div>
         <div className="social-icons">
-          <img src="facebook-icon.svg" alt="Facebook" />
-          <img src="ins-icon.svg" alt="Instagram" />
-          <img src="youtube-icon.svg" alt="YouTube" />
-          <img src="x-icon.svg" alt="Twitter" />
+          <img src="image/facebook-icon.svg" alt="Facebook" />
+          <img src="image/ins-icon.svg" alt="Instagram" />
+          <img src="image/youtube-icon.svg" alt="YouTube" />
+          <img src="image/x-icon.svg" alt="Twitter" />
         </div>
       </div>
     </FooterStyle>

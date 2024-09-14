@@ -13,7 +13,7 @@ const OverviewStyles = styled.div`
 
   .overview-left {
     flex: 1;
-    background-image: url("map-layout.png");
+    background-image: url("image/map-layout.png");
     width: 100%;
     height: 100%;
     display: flex;
@@ -30,6 +30,7 @@ const OverviewStyles = styled.div`
     display: flex;
     flex-direction: column;
     padding: 40px;
+    max-width: 100%;
     gap: 1rem;
   }
 
@@ -50,7 +51,7 @@ const OverviewStyles = styled.div`
   .stats {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    align-items: center;
   }
 
   .stat-item {
@@ -116,13 +117,17 @@ const OverviewSection = () => {
         <div className="overview-left">
           <div className="map">
             <img
-              src="map-img.png"
+              src="/image/map-img.png"
               alt=""
               className="
               map-img"
             />
-            <img src="famely-notify.png" alt="" className="notify-img" />
-            <img src="/bob-location.png" alt="" className="bob-location-img" />
+            <img src="image/famely-notify.png" alt="" className="notify-img" />
+            <img
+              src="image/bob-location.png"
+              alt=""
+              className="bob-location-img"
+            />
           </div>
         </div>
         <div className="overview-right">

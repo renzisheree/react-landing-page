@@ -68,20 +68,20 @@ const FeaturesSection = () => {
         </div>
         <div className="feature-right">
           <FeatureComponent
-            srcIcon="location.svg"
+            srcIcon="/image/location.svg"
             title="Location sharing"
             text=" Locate & protect your family 24/7 with real-time location and
                 geo-fencing"
           ></FeatureComponent>{" "}
           <FeatureComponent
-            srcIcon="alert.svg"
+            srcIcon="image/alert.svg"
             title="Place alerts"
             text="Get notified as loved ones come and go from their most visit
                 places"
             after={true}
           ></FeatureComponent>{" "}
           <FeatureComponent
-            srcIcon="location-history.svg"
+            srcIcon="image/location-history.svg"
             title="Location history"
             text="See location history of your family's whereabouts easily
                 throughout the day"
