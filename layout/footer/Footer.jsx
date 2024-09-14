@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-
 import { FooterStyle } from "./style/footer";
 
 const Footer = () => {

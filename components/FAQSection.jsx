@@ -5,77 +5,119 @@ import DecorativeLine from "./DecorativeLine";
 const FAQStyle = styled.div`
   display: flex;
   width: 100%;
-  padding: 140px 0;
+  padding: 5% 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   .container {
     display: flex;
     flex-direction: column;
-    width: 792px;
+    width: 90%;
+    max-width: 792px;
     gap: 20px;
     justify-content: center;
     align-items: center;
-  }
 
-  h1 {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 68px;
+    h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      line-height: 1.2;
 
-    span {
-      display: inline-flex;
+      span {
+        display: inline-flex;
+        flex-direction: column;
+      }
+    }
+
+    p {
+      font-size: 1em;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #424242;
+      text-align: center;
+    }
+
+    .faq-items-container {
+      display: flex;
+      width: 100%;
       flex-direction: column;
+
+      .faq-item {
+        cursor: pointer;
+        padding: 15px;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.2em;
+        font-weight: 600;
+        line-height: 1.2;
+
+        &:hover {
+          background-color: #f1f1f1;
+        }
+
+        .arrow {
+          transition: transform 0.3s;
+          transform: rotate(0);
+          color: #0f4c81;
+
+          &.open {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .answer {
+        padding: 10px;
+        margin-bottom: 5px;
+        text-align: left;
+        font-size: 0.9em;
+        font-weight: 400;
+        color: #424242;
+        line-height: 1.5;
+      }
     }
   }
-  p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #424242;
-  }
-  .faq-items-container {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-  }
-  .faq-item {
-    cursor: pointer;
-    padding: 22px 15px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    width: 100%;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 28px;
 
-    &:hover {
-      background-color: #f1f1f1;
+  @media (max-width: 768px) {
+    padding: 20px 0;
+
+    .container {
+      width: 95%;
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 0.9em;
+      }
+
+      .faq-item {
+        font-size: 1.1em;
+      }
     }
   }
 
-  .answer {
-    padding: 15px;
-    margin-bottom: 10px;
-    text-align: left;
-    font-size: 18px;
-    font-weight: 400;
-    color: #424242;
-    line-height: 30px;
-  }
+  @media (max-width: 480px) {
+    .container {
+      h1 {
+        font-size: 1.8em;
+      }
 
-  .arrow {
-    transition: transform 0.3s;
-    transform: rotate(0);
-    color: #0f4c81;
-  }
+      p {
+        font-size: 0.8em;
+      }
 
-  .arrow.open {
-    transform: rotate(180deg);
+      .faq-item {
+        font-size: 1em;
+        padding: 15px 0;
+      }
+    }
   }
 `;
 
@@ -86,12 +128,12 @@ const FAQSection = () => {
     {
       question: "How Famee.ly Works?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nihil vitae reiciendis odit enim, officia voluptas adipisci distinctio perspiciatis magni nam, omnis nesciunt quisquam laudantium..",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nihil vitae reiciendis odit enim, officia voluptas adipisci distinctio perspiciatis magni nam, omnis nesciunt quisquam laudantium.",
     },
     {
       question: "How can I add a new member to my Circle?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, impedit perferendis! Beatae nihil dolorum sed rem sint harum eligendi, dignissimos aperiam. Minima quas voluptatum consequatur architecto est enim veritatis? Distinctio ipsa voluptas inventore nulla, repellat recusandae illo deserunt sequi commodi alias quam est repudiandae, neque dignissimos minima suscipit, quia velit..",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, impedit perferendis! Beatae nihil dolorum sed rem sint harum eligendi, dignissimos aperiam. Minima quas voluptatum consequatur architecto est enim veritatis? Distinctio ipsa voluptas inventore nulla, repellat recusandae illo deserunt sequi commodi alias quam est repudiandae, neque dignissimos minima suscipit, quia velit.",
     },
     {
       question: "How to join the Circle?",
@@ -119,7 +161,6 @@ const FAQSection = () => {
           Famee.ly
         </p>
         <div className="faq-items-container">
-          {" "}
           {faqs.map((faq, index) => (
             <div key={index}>
               <div className="faq-item" onClick={() => toggleAnswer(index)}>

@@ -8,6 +8,15 @@ export const FooterStyle = styled.div`
   justify-content: space-around;
   align-items: flex-start;
   padding-bottom: 100px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding-bottom: 100px;
+    input {
+      width: 150px;
+    }
+  }
 
   .footer-left {
     max-width: 350px;
@@ -31,8 +40,9 @@ export const FooterStyle = styled.div`
       flex-direction: column;
       justify-content: center;
       gap: 15px;
-      margin-left: auto;
-      margin-right: auto;
+      @media (max-width: 768px) {
+        flex-direction: row;
+      }
 
       a {
         color: white;
@@ -71,6 +81,9 @@ export const FooterStyle = styled.div`
         font-weight: 400;
         line-height: 22px;
         text-align: left;
+        @media (max-width: 768px) {
+          width: 150px;
+        }
       }
 
       button {

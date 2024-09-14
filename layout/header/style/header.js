@@ -25,6 +25,9 @@ export const HeaderStyles = styled.div`
     gap: 40px;
     font-size: 16px;
     color: black;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .menu-link {

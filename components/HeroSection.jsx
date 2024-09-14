@@ -15,6 +15,11 @@ const HeroStyles = styled.div`
     align-items: center;
     justify-content: center;
     margin-left: 80px;
+
+    @media (max-width: 768px) {
+      margin-left: 0; /* Adjust margin for smaller screens */
+      flex-direction: column; /* Stack elements */
+    }
   }
 
   .hero-left {
@@ -25,6 +30,11 @@ const HeroStyles = styled.div`
     justify-content: space-around;
     align-items: flex-start;
     width: 537px;
+
+    @media (max-width: 768px) {
+      width: 100%; /* Full width on smaller screens */
+      align-items: center; /* Center align items */
+    }
   }
 
   h1 {
@@ -34,6 +44,12 @@ const HeroStyles = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @media (max-width: 768px) {
+      font-size: 48px; /* Adjust font size */
+      line-height: 60px;
+      text-align: center; /* Center align text */
+    }
   }
 
   p {
@@ -41,6 +57,12 @@ const HeroStyles = styled.div`
     font-weight: 400;
     line-height: 30px;
     color: #424242;
+
+    @media (max-width: 768px) {
+      font-size: 16px; /* Adjust font size */
+      line-height: 24px;
+      text-align: center; /* Center align text */
+    }
   }
 
   .btn-start-for-free {
@@ -58,12 +80,21 @@ const HeroStyles = styled.div`
     &:hover {
       background-color: #004080;
     }
+
+    @media (max-width: 768px) {
+      padding: 12px 30px; /* Adjust padding */
+      font-size: 18px; /* Adjust font size */
+    }
   }
 
   .hero-right {
     position: relative;
     width: 50%;
     height: 100%;
+
+    @media (max-width: 768px) {
+      display: none; /* Hide on smaller screens */
+    }
   }
 
   .world-map {
@@ -124,9 +155,8 @@ const HeroStyles = styled.div`
 
   .middle-circle {
     width: 21.88px;
-    border: 2px solid white;
-
     height: 21.88px;
+    border: 2px solid white;
     border-radius: 50%;
     background-color: #1e3a8a;
     display: flex;
@@ -137,8 +167,6 @@ const HeroStyles = styled.div`
   .inner-dot {
     width: 8.2px;
     height: 8.2px;
-    border-radius: 100px 0px 0px 0px;
-    opacity: 0px;
     border-radius: 50%;
     background-color: #42ff8a;
   }
@@ -151,7 +179,7 @@ const HeroSection = () => {
         <div className="hero-left">
           <h1>
             Always By
-            <DecorativeLine width={241}></DecorativeLine>
+            <DecorativeLine width={241} />
             Your Side
           </h1>
           <p>
