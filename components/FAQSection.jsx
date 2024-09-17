@@ -141,7 +141,7 @@ const FAQSection = () => {
     {
       question: "How to join the Circle?",
       answer:
-        "You receive an invite code to join a Circle? This means someone you know invited you join them on Famee.ly and be part of their private Circle. Simply join by going to Profile - Join A Circle, entering an Invite Code you received and you will be placed into your new Circle.",
+        "You receive an invite code to join a Circle? This means someone you know invited you join them on Famee.ly and be part of their private Circle. Simply join by going to Profile - Join A Circle, entering an Invite Code you received and you will be placed into your news Circle.",
     },
   ];
 

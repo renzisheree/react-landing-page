@@ -12,7 +12,7 @@ const OverviewStyles = styled.div`
     height: 100%;
 
     @media (max-width: 768px) {
-      flex-direction: column; /* Change to column layout on small screens */
+      flex-direction: column;
     }
   }
 
@@ -24,13 +24,14 @@ const OverviewStyles = styled.div`
     display: flex;
     background-size: cover;
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
     position: relative;
 
     @media (max-width: 768px) {
-      display: none; /* Hide on small screens */
+      display: none;
     }
 
     .map {
@@ -73,7 +74,7 @@ const OverviewStyles = styled.div`
     gap: 1rem;
 
     @media (max-width: 768px) {
-      padding: 20px; /* Adjust padding for smaller screens */
+      padding: 20px;
     }
   }
 
@@ -83,9 +84,9 @@ const OverviewStyles = styled.div`
     font-weight: 700;
 
     @media (max-width: 768px) {
-      font-size: 36px; /* Adjust font size */
-      line-height: 48px; /* Adjust line height */
-      text-align: center; /* Center align on small screens */
+      font-size: 36px;
+      line-height: 48px;
+      text-align: center;
     }
   }
 
@@ -97,8 +98,8 @@ const OverviewStyles = styled.div`
     margin-bottom: 2rem;
 
     @media (max-width: 768px) {
-      font-size: 16px; /* Adjust font size */
-      text-align: center; /* Center align on small screens */
+      font-size: 16px;
+      text-align: center;
     }
   }
 
@@ -108,8 +109,8 @@ const OverviewStyles = styled.div`
     align-items: center;
 
     @media (max-width: 768px) {
-      flex-direction: column; /* Change stats to column layout */
-      align-items: center; /* Center align items */
+      flex-direction: column;
+      align-items: center;
     }
   }
 
